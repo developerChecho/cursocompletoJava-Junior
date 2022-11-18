@@ -301,7 +301,7 @@ public class operadores {
 
                                       // decifrar cuantas cifras tiene un numero//
 
-                     int numero;
+                    /* int numero;
                        numero=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
                        if (numero < 10){
                            JOptionPane.showMessageDialog(null," el numero es de 1 cifra ");
@@ -316,13 +316,94 @@ public class operadores {
                        } else if (numero<100000) {
                            JOptionPane.showMessageDialog(null," el numero es de 5 cifras");
 
-                       }
+                       } else {
+                           if (numero >100000){
+                               JOptionPane.showMessageDialog(null,"el numero que ingreso esta fuera del rango");
+                           }*/
+                           /*
+                           realizar un programa que informe si la fecha dia y año es correcta tenieniendo encuenta que son de 30 dias
+                            */
+                         /*  int dia, mes ,año;
+                           dia=Integer.parseInt(JOptionPane.showInputDialog("digite el dia "));
+                           mes=Integer.parseInt(JOptionPane.showInputDialog("digite el mes"));
+                           año=Integer.parseInt(JOptionPane.showInputDialog("digite el año "));
+
+                           if ((dia>=1) && (dia<=30 )){
+                               JOptionPane.showMessageDialog(null," la fecha es correcta ");
+                       } if ((mes >=1) && (mes<=12)){
+                               JOptionPane.showMessageDialog(null, " la fecha es correcta ");
+                        } if ((año>=1) && (año<1900)){
+                               JOptionPane.showMessageDialog(null, " la fecha es correcta ");
+                        } else {
+                                JOptionPane.showMessageDialog(null, " fecha incorrecta");
+
+                       }*/
+
+                   // hacer un programa donde se digite un numero y diga si es par o impar//
+
+                          /*int numero= 2;
+                          numero=Integer.parseInt(JOptionPane.showInputDialog(" por favor digite un numero"));
+                          if (((numero)%2)==0){
+                                JOptionPane.showMessageDialog(null," el numero es par ");
+                          } else {
+                              JOptionPane.showMessageDialog(null,"el numero es impar");
+                          }*/
+
+                    /*  int dia, mes, año;
+                      dia=Integer.parseInt(JOptionPane.showInputDialog("ingrese el dia"));
+                      mes=Integer.parseInt(JOptionPane.showInputDialog("ingrese el mes "));
+                      año=Integer.parseInt(JOptionPane.showInputDialog(" Ingrese el año "));
+                      
+                      if (año==0){
+                          JOptionPane.showMessageDialog(null,"fecha incorrecta");
+                      } else if ((mes==2 ) && dia>=1 && dia<=28) {
+                          JOptionPane.showMessageDialog(null,"fecha correcta");
+                      } else if((mes == 4 || mes==6 || mes==9 || mes==11) && dia>1 && dia<=30){
+                          JOptionPane.showMessageDialog(null,"fecha correcta");
+                      } else if ((mes==1 || mes==3 || mes==5 || mes==7 || mes==8|| mes==10 || mes==12  )&& dia>1 && dia<=31) {
+                          JOptionPane.showMessageDialog(null,"fecha correcta");
+                          
+                      } else {
+                          JOptionPane.showMessageDialog(null,"fecha incorrecta");
+                      }*/
+                    /*
+                    realizar una calculadora donde pueda sumar restar multiplicar y donde S sea para suma R para resta M para multiplicar
+                    D para dividir
+                     */
+                    int numero1,numero2,suma,resta,division,multiplicacion;
+                    char operacion;
+
+                    numero1=Integer.parseInt(JOptionPane.showInputDialog(" Ingrese un numero"));
+                    numero2=Integer.parseInt(JOptionPane.showInputDialog(" Ingresa otro numero"));
+
+                    operacion=JOptionPane.showInputDialog("digite la  operacion que desea realizar").charAt(0);
+                    switch (operacion){
+                        case 's':
+                        case 'S':
+                            suma= numero1+numero2;
+                            JOptionPane.showMessageDialog(null," el resultado es " +suma);
+                        break;
+                        case 'r':
+                        case 'R':
+                            resta= numero1-numero2;
+                            JOptionPane.showMessageDialog(null," El resultado es "+resta);
+                        break;
+                        case 'd':
+                        case 'D':
+                            division= numero1/numero2;
+                            JOptionPane.showMessageDialog(null,"el resultado es "+division);
+                        break;
+                        case 'm':
+                        case 'M':
+                            multiplicacion=numero1*numero2;
+                            JOptionPane.showMessageDialog(null,"el resultado es "+ multiplicacion);
+                        break;
+                        default: JOptionPane.showMessageDialog(null,"operacion no realiza digite la opcion correcta");
+
+
+                    }
 
 
     }
-
-
-
-
 
 }
